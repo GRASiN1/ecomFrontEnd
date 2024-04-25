@@ -1,0 +1,14 @@
+<div class="container">
+    <form class="m-4">
+        <div class="mb-3">
+            <label for="username" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                [(ngModel)]="loginObj.username" name="username">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="text" class="form-control" id="password" [(ngModel)]="loginObj.password" name="password">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="onLogin()">Log In</button>
+    </form>
+</div>
