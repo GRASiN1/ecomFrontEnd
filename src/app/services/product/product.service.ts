@@ -23,6 +23,9 @@ export class ProductService {
   createProduct(obj: any) {
     return this.http.post(constant.API_END_POINT + constant.METHOD.CREATE_PRODUCT, obj);
   }
+  createCategory(obj: any) {
+    return this.http.post(constant.API_END_POINT + constant.METHOD.CREATE_CATEGORY, obj);
+  }
 
   updateProduct(obj: any) {
     return this.http.post(constant.API_END_POINT + constant.METHOD.UPDATE_PRODUCT, obj);

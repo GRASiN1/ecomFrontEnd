@@ -77,6 +77,7 @@ export class ProductComponent implements OnInit {
 
   }
 
+  // delete it
   getAllCategory() {
     this.productService.getCategory().subscribe((res: any) => {
       this.categoryList = res.data;
