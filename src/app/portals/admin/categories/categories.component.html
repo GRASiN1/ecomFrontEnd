@@ -17,14 +17,14 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Sr. No.</th>
+                                    <th>Category Id</th>
                                     <th>Category Name</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr *ngFor="let item of products$ | async let index = index">
-                                    <td>{{index+1}}</td>
+                                <tr *ngFor="let item of products$ | async ">
+                                    <td>{{item.categoryId}}</td>
                                     <td>{{item.categoryName}}</td>
                                     <td></td>
                                 </tr>
